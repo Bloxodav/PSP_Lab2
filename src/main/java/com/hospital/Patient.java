@@ -1,19 +1,17 @@
 package com.hospital;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.AllArgsConstructor;
+
+@Getter
+@Setter
 public class Patient extends Person {
 
     private String diagnosis;
 
     public Patient(String name, int age, String department, String diagnosis) {
         super(name, age, department, "com.hospital.Patient");
-        this.diagnosis = diagnosis;
-    }
-
-    public String getDiagnosis() {
-        return diagnosis;
-    }
-
-    public void setDiagnosis(String diagnosis) {
         this.diagnosis = diagnosis;
     }
 
