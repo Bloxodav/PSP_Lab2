@@ -1,19 +1,16 @@
 package com.hospital;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Nurse extends Person {
 
     private String shift;
 
     public Nurse(String name, int age, String department, String shift) {
         super(name, age, department, "com.hospital.Nurse");
-        this.shift = shift;
-    }
-
-    public String getShift() {
-        return shift;
-    }
-
-    public void setShift(String shift) {
         this.shift = shift;
     }
 

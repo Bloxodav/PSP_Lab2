@@ -181,7 +181,6 @@ public class HospitalManager {
             System.out.println("Данные сохранены в файл: " + FILE_NAME);
             logger.info("Данные сохранены в файл. Записей: " + people.size());
         } catch (IOException e) {
-            // Обработка исключения при ошибке записи
             System.out.println("Ошибка сохранения: " + e.getMessage());
             logger.error("Ошибка сохранения в файл: " + e.getMessage());
         }
